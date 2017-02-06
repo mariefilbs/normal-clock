@@ -1,14 +1,14 @@
 * {
   box-sizing: border-box; }
 
-.clockcontainer {
+#clock-container {
   height: 460px;
   width: 700px;
   background-color: black;
   text-align: center;
   color: white; }
 
-.clock {
+#clock {
   display: inline-block;
   font-size: 40px;
   color: white;
