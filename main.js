@@ -1,5 +1,4 @@
 var clockDisplay = document.getElementById("clock");
-var backgroundDisplay = document.getElementById("clock-container")
 
 function showTime() {
   var date = new Date();
@@ -14,7 +13,7 @@ function showTime() {
 //Converting from military time
   if (hours > 12) {hours = hours - 12; meridiem = "PM";}
   if (hours === 0) {hours = 12;}
-  
+
 //needed to move this down to format AFTER changing to military time
   if (hours < 10) {hours = "0" + hours;}
 
