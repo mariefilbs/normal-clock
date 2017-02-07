@@ -1,4 +1,7 @@
+
+//Normal Mode Clock with changing background color every second
 var clockDisplay = document.getElementById("clock");
+var backgroundColor = document.getElementById("clock-container");
 
 function showTime() {
   var date = new Date();
@@ -18,13 +21,8 @@ function showTime() {
   if (hours < 10) {hours = "0" + hours;}
 
   clockDisplay.innerHTML = (hours + ":" + minutes + ":" + seconds);
+  backgroundColor.style.background = ("#" + hours + minutes + seconds);
 
-  //Hard Mode clock
-  var hexTime = document.getElementById("clock2");
-  var hexBackground = document.getElementById("clock-container2");
-
-  hexBackground.style.backgroundColor = ("#" + hours + minutes + seconds);
-  hexTime.innerHTML = ("#" + hours + minutes + seconds);
 }
 setInterval(showTime, 1000);
 showTime();
